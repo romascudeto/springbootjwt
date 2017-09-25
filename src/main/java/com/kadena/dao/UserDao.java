@@ -1,13 +1,13 @@
-package me.aboullaite.dao;
+package com.kadena.dao;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import me.aboullaite.model.User;
+import com.kadena.model.User;
 
 @Repository
 public interface UserDao extends CrudRepository<User, Long> {
 	User save(User user);
 
-	User findByEmail(String email);
+	User findByUsername(String email);
 }

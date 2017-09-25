@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>me.aboullaite</groupId>
+	<groupId>com.kadena</groupId>
 	<artifactId>spring_boot_jwt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>spring_boot_jwt</name>
-	<description>Demo project for Spring Boot and JWT</description>
+	<description>Spring Boot and JWT</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -29,28 +29,46 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-aop</artifactId>
+                </dependency>
+                
+                <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-data-jpa</artifactId>
+                </dependency>
 
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-data-jpa</artifactId>
-	</dependency>
+                <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.google.code.gson</groupId>
+                    <artifactId>gson</artifactId>
+                    <version>2.8.0</version>
+                </dependency>
+                <dependency>
+                        <groupId>io.jsonwebtoken</groupId>
+                        <artifactId>jjwt</artifactId>
+                        <version>0.6.0</version>
+                </dependency>
+                
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-security</artifactId>
+                </dependency>
 
-	<dependency>
-		<groupId>mysql</groupId>
-		<artifactId>mysql-connector-java</artifactId>
-	</dependency>
-
-	<dependency>
-		<groupId>io.jsonwebtoken</groupId>
-		<artifactId>jjwt</artifactId>
-		<version>0.6.0</version>
-	</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+                <dependency>
+                    <groupId>commons-codec</groupId>
+                    <artifactId>commons-codec</artifactId>           
+                </dependency>
+                <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-test</artifactId>
+                        <scope>test</scope>
+                </dependency>
 	</dependencies>
 
 	<build>
